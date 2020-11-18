@@ -1,0 +1,17 @@
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\projectDevProg.deps.json
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\projectDevProg.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\ref\projectDevProg.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\projectDevProg.pdb
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.csprojAssemblyReference.cache
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\DetailsPage.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\ExtraPage.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\FilteredPage.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.AssemblyInfoInputs.cache
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.AssemblyInfo.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.csproj.CoreCompileInputs.cache
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\ref\projectDevProg.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.pdb

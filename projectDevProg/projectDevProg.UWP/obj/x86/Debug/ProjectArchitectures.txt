@@ -1,0 +1,1 @@
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\projectDevProg.UWP.csproj;x86
