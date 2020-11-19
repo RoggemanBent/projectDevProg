@@ -3,28 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.MainPage">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Image Grid.RowSpan="2" Source="https://images3.alphacoders.com/628/62857.jpg" Aspect="AspectFill" />
-
-        <StackLayout Grid.Row="1" Margin="49,0">
-            <Label Text="Pokemon" FontSize="Large" TextColor="DarkRed" />
-
-            <ListView x:Name="lvwPokemon" SeparatorColor="White" ItemSelected="lvwPokemon_ItemSelected">
-                <!--f12-->
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <WrapPanel>
-                            <TextBlock Text="Name: " />
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                            <TextBlock Text=", " />
-                        </WrapPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-    </Grid>
+    <ListView Margin="8" x:Name="lvwPokemon" RowHeight="250">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Margin="8">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="https://cdn.bulbagarden.net/upload/2/21/001Bulbasaur.png" Grid.RowSpan="3" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{Binding Name}" Grid.Row="1" HorizontalOptions="Center" FontSize="Large"/>
+                            <Label Text="{Binding Id}" Grid.Row="1" HorizontalOptions="End" FontSize="Large"/>
+                            <Label Text="{Binding Form}" FontSize="Micro" Grid.Row="2" HorizontalOptions="Center" />
+                        </Grid>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

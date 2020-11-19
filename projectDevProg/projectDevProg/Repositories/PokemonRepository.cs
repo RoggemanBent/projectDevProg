@@ -52,5 +52,34 @@ namespace projectDevProg.Repositories
                 }
             }
         }
+
+        public async static Task<List<Pokemon>> GetPokemonTypes()
+        {
+            // HttpClient
+            using (HttpClient client = await GetClient())
+            {
+                String url = AddKey("https://pokemon-go1.p.rapidapi.com/pokemon_types.json");
+                String json = await client.GetStringAsync(url);
+
+                // json --> List
+                if (json != null)
+                {
+                    List<Pokemon> pokemons = JsonConvert.DeserializeObject<List<Pokemon>>(json);
+                    List<Pokemon> pokemonsGood = new List<Pokemon>();
+                    foreach (Pokemon p in pokemons)
+                    {
+                        if (p.Form == "Normal" || p.Form == "Galarian")
+                        {
+                            pokemonsGood.Add(p);
+                        }
+                    }
+                    return pokemonsGood;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
     }
 }

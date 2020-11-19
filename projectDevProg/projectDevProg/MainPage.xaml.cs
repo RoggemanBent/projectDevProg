@@ -1,5 +1,6 @@
 ﻿using projectDevProg.Models;
 using projectDevProg.Repositories;
+using projectDevProg.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace projectDevProg
 {
     public partial class MainPage : ContentPage
     {
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -25,10 +28,8 @@ namespace projectDevProg
             lvwPokemon.ItemsSource = await PokemonRepository.GetPokemons();
         }
 
-        private void lvwPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void lvwPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
-
             // deze code wordt geactiveerd als een item geselecteerd wordt
             if (lvwPokemon.SelectedItem != null)
             {
@@ -37,7 +38,7 @@ namespace projectDevProg
                 Pokemon pokemonSelected = (Pokemon)lvwPokemon.SelectedItem;
 
                 // detail page
-                //Navigation.PushAsync(new DetailPage(guestSelected));
+                await Navigation.PushAsync(new DetailsPage(pokemonSelected));
 
                 lvwPokemon.SelectedItem = null;
             }

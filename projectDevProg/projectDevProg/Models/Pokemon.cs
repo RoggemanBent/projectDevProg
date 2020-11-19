@@ -24,5 +24,6 @@ namespace projectDevProg.Models
 
         [JsonProperty(PropertyName = "base_attack")]
         public int Attack { get; set; }
+
     }
 }
