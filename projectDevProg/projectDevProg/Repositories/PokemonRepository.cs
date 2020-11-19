@@ -29,14 +29,22 @@ namespace projectDevProg.Repositories
             // HttpClient
             using (HttpClient client = await GetClient())
             {
-                String url = AddKey("https://pokemon-go1.p.rapidapi.com/pokemon_types.json");
+                String url = AddKey("https://pokemon-go1.p.rapidapi.com/pokemon_stats.json");
                 String json = await client.GetStringAsync(url);
 
                 // json --> List
                 if (json != null)
                 {
                     List<Pokemon> pokemons = JsonConvert.DeserializeObject<List<Pokemon>>(json);
-                    return pokemons;
+                    List<Pokemon> pokemonsGood = new List<Pokemon>();
+                    foreach (Pokemon p in pokemons)
+                    {
+                        if (p.Form == "Normal" || p.Form == "Galarian")
+                        {
+                            pokemonsGood.Add(p);
+                        }
+                    }
+                    return pokemonsGood;
                 }
                 else
                 {
