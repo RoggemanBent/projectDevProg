@@ -35,9 +35,6 @@ namespace projectDevProg.Views
                 i++;
             }
 
-        Debug.WriteLine(list1[0].Name);
-            Debug.WriteLine(list1[0].FirstType);
-            Debug.WriteLine(list1[0].SecondType);
             lvwPokemon.ItemsSource = list1;
         }
 

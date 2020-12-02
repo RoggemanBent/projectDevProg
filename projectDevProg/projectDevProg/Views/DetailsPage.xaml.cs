@@ -30,7 +30,7 @@ namespace projectDevProg.Views
         private void ShowDetails()
         {
             lblName.Text = DetailPokemon.Name;
-            Debug.WriteLine("***" + DetailPokemon.FirstType);
+            lblType.Text = DetailPokemon.FirstType + "      " + DetailPokemon.SecondType;
             lblStamina.Text = DetailPokemon.Stamina.ToString();
             lblAttack.Text = DetailPokemon.Attack.ToString();
             lblDefense.Text = DetailPokemon.Defense.ToString();

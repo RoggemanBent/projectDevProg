@@ -3,10 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.FilteredList">
     <ContentPage.Content>
-        <Grid>
-            <Label x:Name="lblType"></Label>
-        </Grid>
-        <!--<ListView Margin="8" x:Name="lvwPokemon" RowHeight="250" ItemSelected="lvwPokemon_ItemSelected">
+        <ListView Margin="8" x:Name="lvwPokemon" RowHeight="250" ItemSelected="lvwPokemon_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -16,15 +13,24 @@
                                     <RowDefinition />
                                     <RowDefinition />
                                 </Grid.RowDefinitions>
-                                <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" Grid.RowSpan="3" HorizontalOptions="Start" VerticalOptions="Center"/>
-                                <Label Text="{Binding Name}" Grid.Row="1" HorizontalOptions="Center" FontSize="Large"/>
-                                <Label Text="{Binding Id}" Grid.Row="1" HorizontalOptions="End" FontSize="Large"/>
-                                <Label Text="{Binding Form}" FontSize="Micro" Grid.Row="2" HorizontalOptions="Center" />
+                                <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="{Binding Image}" Grid.RowSpan="3" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label Text="{Binding Name}" Grid.Row="1" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+                                <Label Text="{Binding Id}" Grid.Row="1" HorizontalOptions="End" FontSize="Large"  TextColor="Black"/>
+                                <Grid Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding FirstType}" FontSize="Micro" TextColor="Black"  Grid.Column="1"  HorizontalOptions="End"/>
+                                    <Label Text="{Binding SecondType}" FontSize="Micro" TextColor="Black"  Grid.Column="2" HorizontalOptions="Start"/>
+                                </Grid>
                             </Grid>
                         </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>-->
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
