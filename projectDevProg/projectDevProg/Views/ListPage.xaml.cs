@@ -17,14 +17,28 @@ namespace projectDevProg.Views
         public ListPage()
         {
             InitializeComponent();
-            TestModels();
+            //TestModels();
             LoadPokemon();
         }
 
         private async void LoadPokemon()
         {
+            List<Pokemon> list1 = await PokemonRepository.GetPokemons();
+            List<Pokemon> list2 = await PokemonRepository.GetPokemonTypes();
 
-            lvwPokemon.ItemsSource = await PokemonRepository.GetPokemons();
+
+            int i = 0;
+            while (i < list1.Count)
+            {
+                list1[i].FirstType = list2[i].FirstType;
+                list1[i].SecondType = list2[i].SecondType;
+                i++;
+            }
+
+        Debug.WriteLine(list1[0].Name);
+            Debug.WriteLine(list1[0].FirstType);
+            Debug.WriteLine(list1[0].SecondType);
+            lvwPokemon.ItemsSource = list1;
         }
 
         private async void lvwPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)

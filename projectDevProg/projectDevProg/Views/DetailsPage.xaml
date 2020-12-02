@@ -31,6 +31,12 @@
                 <Label x:Name="lblName" Style="{StaticResource DetailLabelStyle}" />
             </Grid>
             <BoxView Color="Black" HeightRequest="1" />
+
+            <Grid>
+                <Label Text="Name" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblType" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="Black" HeightRequest="1" />
             <!--separator line-->
 
             <Grid>

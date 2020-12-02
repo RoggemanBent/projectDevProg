@@ -6,7 +6,7 @@ using System.Text;
 namespace projectDevProg.Models
 {
     public class Pokemon
-    {
+    { 
         [JsonProperty(PropertyName = "pokemon_id")]
         public int Id { get; set; }
 
@@ -17,7 +17,10 @@ namespace projectDevProg.Models
         public String Form { get; set; }
 
         [JsonProperty(PropertyName = "type")]
-        public PokemonType Type { get; set; }
+        public List<String> Type { get; set; }
+
+        public String FirstType { get; set; }
+        public String SecondType { get; set; }
 
         [JsonProperty(PropertyName = "base_stamina")]
         public int Stamina { get; set; }
@@ -28,5 +31,6 @@ namespace projectDevProg.Models
         [JsonProperty(PropertyName = "base_attack")]
         public int Attack { get; set; }
 
+        public String Image { get; set; }
     }
 }

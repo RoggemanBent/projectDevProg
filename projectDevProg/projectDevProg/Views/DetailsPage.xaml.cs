@@ -1,6 +1,7 @@
 ﻿using projectDevProg.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,7 @@ namespace projectDevProg.Views
         private void ShowDetails()
         {
             lblName.Text = DetailPokemon.Name;
+            Debug.WriteLine("***" + DetailPokemon.FirstType);
             lblStamina.Text = DetailPokemon.Stamina.ToString();
             lblAttack.Text = DetailPokemon.Attack.ToString();
             lblDefense.Text = DetailPokemon.Defense.ToString();

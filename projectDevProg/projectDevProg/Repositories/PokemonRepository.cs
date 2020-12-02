@@ -41,6 +41,7 @@ namespace projectDevProg.Repositories
                     {
                         if (p.Form == "Normal" || p.Form == "Galarian")
                         {
+                            p.Image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + p.Id + ".png";
                             pokemonsGood.Add(p);
                         }
                     }
@@ -70,6 +71,11 @@ namespace projectDevProg.Repositories
                     {
                         if (p.Form == "Normal" || p.Form == "Galarian")
                         {
+                            p.FirstType = p.Type[0];
+                            if (p.Type.Count > 1)
+                            {
+                                p.SecondType = p.Type[1];
+                            }
                             pokemonsGood.Add(p);
                         }
                     }
