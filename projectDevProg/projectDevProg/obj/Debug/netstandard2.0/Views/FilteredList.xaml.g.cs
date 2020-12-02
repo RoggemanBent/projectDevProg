@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("projectDevProg.Views.ExtraPage.xaml", "Views/ExtraPage.xaml", typeof(global::projectDevProg.Views.ExtraPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("projectDevProg.Views.FilteredList.xaml", "Views/FilteredList.xaml", typeof(global::projectDevProg.Views.FilteredList))]
 
 namespace projectDevProg.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\ExtraPage.xaml")]
-    public partial class ExtraPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FilteredList.xaml")]
+    public partial class FilteredList : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView lvwPokemon;
+        private global::Xamarin.Forms.Label lblType;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ExtraPage));
-            lvwPokemon = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "lvwPokemon");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FilteredList));
+            lblType = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblType");
         }
     }
 }

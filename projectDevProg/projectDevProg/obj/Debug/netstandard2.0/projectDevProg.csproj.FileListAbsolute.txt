@@ -6,7 +6,6 @@ C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandar
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\DetailsPage.xaml.g.cs
-C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\ExtraPage.xaml.g.cs
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\FilteredPage.xaml.g.cs
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.AssemblyInfoInputs.cache
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.AssemblyInfo.cs
@@ -16,3 +15,4 @@ C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandar
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.csproj.CoreCompileInputs.cache
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\ListPage.xaml.g.cs
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\FilteredList.xaml.g.cs

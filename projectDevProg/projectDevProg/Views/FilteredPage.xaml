@@ -2,28 +2,69 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.FilteredPage">
-    <StackLayout Margin="16" Spacing="0">
-        <Label FontAttributes="Bold" Text="Login" FontSize="Medium" TextColor="Black" />
-        <Frame BackgroundColor="GhostWhite" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
-            <StackLayout Spacing="0">
-                <Grid RowSpacing="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Label Text="User" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" />
-                    <Entry x:Name="entUser" TextColor="Black" Grid.Column="1" />
-                </Grid>
-                <Grid RowSpacing="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100" />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Email" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" />
-                    <Entry x:Name="entEmail" TextColor="Black" Grid.Column="1" />
-                </Grid>
-            </StackLayout>
-        </Frame>
-        <Button x:Name="btnLogin" Text="GO" TextColor="White" BackgroundColor="SteelBlue" Margin="0" />
-    </StackLayout>
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid Grid.Row="0" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Frame x:Name="frmNormal" Grid.Row="0" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Normal" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmPoison" Grid.Row="1" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Poison" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmPsychic" Grid.Row="2" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Psychic" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmGrass" Grid.Row="3" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Grass" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmGround" Grid.Row="4" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Ground" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmIce" Grid.Row="5" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Ice" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmFire" Grid.Row="6" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Fire" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmRock" Grid.Row="7" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Rock" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmDragon" Grid.Row="8" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Dragon" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmWater" Grid.Row="9" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Water" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmBug" Grid.Row="10" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Bug" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmDark" Grid.Row="11" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Dark" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmFighting" Grid.Row="12" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Fighting" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmGhost" Grid.Row="13" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Ghost" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmSteel" Grid.Row="14" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Steel" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmFlying" Grid.Row="15" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Flying" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmElectric" Grid.Row="16" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Electric" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmFairy" Grid.Row="17" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Fairy" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
