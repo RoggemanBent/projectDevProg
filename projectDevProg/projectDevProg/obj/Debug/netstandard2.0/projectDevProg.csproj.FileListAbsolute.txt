@@ -15,3 +15,4 @@ C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandar
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.pdb
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\projectDevProg.csproj.CoreCompileInputs.cache
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\obj\Debug\netstandard2.0\Views\ListPage.xaml.g.cs

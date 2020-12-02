@@ -2,25 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.MainPage">
-
-    <ListView Margin="8" x:Name="lvwPokemon" RowHeight="250">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <Frame Margin="8">
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition />
-                                <RowDefinition />
-                            </Grid.RowDefinitions>
-                            <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="https://cdn.bulbagarden.net/upload/2/21/001Bulbasaur.png" Grid.RowSpan="3" HorizontalOptions="Start" VerticalOptions="Center"/>
-                            <Label Text="{Binding Name}" Grid.Row="1" HorizontalOptions="Center" FontSize="Large"/>
-                            <Label Text="{Binding Id}" Grid.Row="1" HorizontalOptions="End" FontSize="Large"/>
-                            <Label Text="{Binding Form}" FontSize="Micro" Grid.Row="2" HorizontalOptions="Center" />
-                        </Grid>
-                    </Frame>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Aspect="AspectFill" Source="https://images4.alphacoders.com/728/728240.png"></Image>
+            <BoxView Grid.Row="1" BackgroundColor="SteelBlue"/>
+            <Grid Grid.Row="2" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Frame x:Name="frmPokedex" Grid.Row="0" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Pokedex" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+                <Frame x:Name="frmFilter" Grid.Row="1" Padding="0" Margin="1" BorderColor="SteelBlue">
+                    <Label Text="Filter Pokemons" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

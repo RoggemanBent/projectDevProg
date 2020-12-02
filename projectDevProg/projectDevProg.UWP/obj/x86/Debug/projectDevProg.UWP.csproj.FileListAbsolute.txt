@@ -312,3 +312,7 @@ C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\obj\x86\Debug\Pr
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160679180000000.json
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
 C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Elasticsearch.Net.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Elasticsearch.Net.pdb
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Nest.dll
+C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Nest.pdb

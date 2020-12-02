@@ -16,6 +16,9 @@ namespace projectDevProg.Models
         [JsonProperty(PropertyName = "form")]
         public String Form { get; set; }
 
+        [JsonProperty(PropertyName = "type")]
+        public PokemonType Type { get; set; }
+
         [JsonProperty(PropertyName = "base_stamina")]
         public int Stamina { get; set; }
 

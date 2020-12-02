@@ -28,10 +28,11 @@ namespace projectDevProg.Views
         // details in de jusite labels tonen
         private void ShowDetails()
         {
-            lblGroup.Text = DetailPokemon.Name;
-            lblName.Text = DetailPokemon.Id.ToString();
-            lblShowDate.Text = DetailPokemon.Attack.ToString();
-            lblOccupation.Text = DetailPokemon.Stamina.ToString();
+            lblName.Text = DetailPokemon.Name;
+            lblStamina.Text = DetailPokemon.Stamina.ToString();
+            lblAttack.Text = DetailPokemon.Attack.ToString();
+            lblDefense.Text = DetailPokemon.Defense.ToString();
+            imgPokemon.Source = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+DetailPokemon.Id+".png";
         }
     }
 }

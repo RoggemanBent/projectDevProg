@@ -3,22 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.DetailsPage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#959ca6" Orientation="Vertical">
-            <!--the 'resources' part contains styles for the controls inside the stacklayout-->
-            <!--you can COLLAPSE it for better readability of the rest using the '-' sign on the left-->
+        <StackLayout BackgroundColor="White" Orientation="Vertical">
             <StackLayout.Resources>
                 <ResourceDictionary>
                     <Style TargetType="{x:Type Grid}">
                         <Setter Property="HeightRequest" Value="50" />
                     </Style>
                     <Style TargetType="{x:Type Label}" x:Key="TitleLabelStyle">
-                        <Setter Property="TextColor" Value="#A9BFDD" />
+                        <Setter Property="TextColor" Value="Black" />
                         <Setter Property="FontAttributes" Value="Bold" />
                         <Setter Property="VerticalOptions" Value="Center" />
                         <Setter Property="Margin" Value="16,0,0,0" />
                     </Style>
                     <Style TargetType="{x:Type Label}" x:Key="DetailLabelStyle">
-                        <Setter Property="TextColor" Value="White" />
+                        <Setter Property="TextColor" Value="Black" />
                         <Setter Property="FontAttributes" Value="Bold" />
                         <Setter Property="VerticalOptions" Value="Center" />
                         <Setter Property="HorizontalOptions" Value="End" />
@@ -26,35 +24,36 @@
                     </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
-            <!--Grid for the name (style/layout is defined in resources above)-->
+            <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" Grid.RowSpan="3" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <BoxView Color="Black" HeightRequest="1" />
             <Grid>
                 <Label Text="Name" Style="{StaticResource TitleLabelStyle}" />
                 <Label x:Name="lblName" Style="{StaticResource DetailLabelStyle}" />
             </Grid>
-            <BoxView Color="White" HeightRequest="1" />
-            <!--separator line-->
-
-            <!--Grid for the occupation (style/layout is defined in resources above)-->
-            <Grid>
-                <Label Text="Occupation" Style="{StaticResource TitleLabelStyle}" />
-                <Label x:Name="lblOccupation" Style="{StaticResource DetailLabelStyle}" />
-            </Grid>
-            <BoxView Color="White" HeightRequest="1" />
+            <BoxView Color="Black" HeightRequest="1" />
             <!--separator line-->
 
             <Grid>
-                <Label Text="Group" Style="{StaticResource TitleLabelStyle}" />
-                <Label x:Name="lblGroup" Style="{StaticResource DetailLabelStyle}" />
+                <Label Text="Stamina" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblStamina" Style="{StaticResource DetailLabelStyle}" />
             </Grid>
-            <BoxView Color="White" HeightRequest="1" />
+            <BoxView Color="Black" HeightRequest="1" />
+            <!--separator line-->
+            
+            <Grid>
+                <Label Text="Attack" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblAttack" Style="{StaticResource DetailLabelStyle}" />
+            </Grid>
+            <BoxView Color="Black" HeightRequest="1" />
             <!--separator line-->
 
             <Grid>
-                <Label Text="Show date" Style="{StaticResource TitleLabelStyle}" />
-                <Label x:Name="lblShowDate" Style="{StaticResource DetailLabelStyle}" />
+                <Label Text="Defense" Style="{StaticResource TitleLabelStyle}" />
+                <Label x:Name="lblDefense" Style="{StaticResource DetailLabelStyle}" />
             </Grid>
-            <BoxView Color="White" HeightRequest="1" />
+            <BoxView Color="Black" HeightRequest="1" />
             <!--separator line-->
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

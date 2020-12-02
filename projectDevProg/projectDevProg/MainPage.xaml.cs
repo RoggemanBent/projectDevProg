@@ -15,45 +15,27 @@ namespace projectDevProg
     public partial class MainPage : ContentPage
     {
 
-
         public MainPage()
         {
             InitializeComponent();
-            TestModels();
-            LoadPokemon();
+
+            TapGestureRecognizer tapGestureRecognizer1 = new TapGestureRecognizer();
+            tapGestureRecognizer1.Tapped += TapGestureRecognizer_Tapped1;
+            frmPokedex.GestureRecognizers.Add(tapGestureRecognizer1);
+
+            TapGestureRecognizer tapGestureRecognizer2 = new TapGestureRecognizer();
+            tapGestureRecognizer2.Tapped += TapGestureRecognizer_Tapped2;
+            frmFilter.GestureRecognizers.Add(tapGestureRecognizer2);
         }
 
-        private async void LoadPokemon()
+        private void TapGestureRecognizer_Tapped1(object sender, EventArgs e)
         {
-            lvwPokemon.ItemsSource = await PokemonRepository.GetPokemons();
-        }
-
-        private async void lvwPokemon_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+            Navigation.PushAsync(new ListPage());
+        }        
+        
+        private void TapGestureRecognizer_Tapped2(object sender, EventArgs e)
         {
-            // deze code wordt geactiveerd als een item geselecteerd wordt
-            if (lvwPokemon.SelectedItem != null)
-            {
-                // vraag op wie er geselecteerd is
-                // opm: casting noodzakelijk
-                Pokemon pokemonSelected = (Pokemon)lvwPokemon.SelectedItem;
-
-                // detail page
-                await Navigation.PushAsync(new DetailsPage(pokemonSelected));
-
-                lvwPokemon.SelectedItem = null;
-            }
-        }
-
-        private async void TestModels()
-        {
-            List<Pokemon> pokemon = await PokemonRepository.GetPokemons();
-            foreach (Pokemon p in pokemon)
-            {
-                if (p.Form == "Normal" || p.Form == "Galarian")
-                {
-                    Debug.WriteLine(p.Id + ": " + p.Name + ": " + p.Stamina + ", " + p.Defense + ", " + p.Attack);
-                }
-            }
+            Navigation.PushAsync(new FilteredPage());
         }
     }
 }

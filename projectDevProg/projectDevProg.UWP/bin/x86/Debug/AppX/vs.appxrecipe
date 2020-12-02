@@ -30,13 +30,21 @@
     <AppXManifest Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-11-19T14:53:51.095</Modified>
+      <Modified>2020-12-02T09:44:40.807</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\projectDevProg.UWP.exe">
       <PackagePath>entrypoint\projectDevProg.UWP.exe</PackagePath>
-      <Modified>2020-11-19T14:53:50.207</Modified>
+      <Modified>2020-12-02T09:44:39.444</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\elasticsearch.net\7.10.0\lib\netstandard2.0\Elasticsearch.Net.dll">
+      <PackagePath>Elasticsearch.Net.dll</PackagePath>
+      <Modified>2020-11-12T11:10:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\nest\7.10.0\lib\netstandard2.0\Nest.dll">
+      <PackagePath>Nest.dll</PackagePath>
+      <Modified>2020-11-12T11:10:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -144,10 +152,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-      <Modified>2018-10-04T11:37:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.DiagnosticSource.dll">
-      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2018-10-04T11:37:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.FileVersionInfo.dll">
@@ -698,6 +702,10 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2018-10-04T11:37:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\system.diagnostics.diagnosticsource\4.5.1\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+      <Modified>2018-09-18T17:38:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T01:58:38.000</Modified>
@@ -724,7 +732,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\projectDevProg.dll">
       <PackagePath>projectDevProg.dll</PackagePath>
-      <Modified>2020-11-19T14:55:16.751</Modified>
+      <Modified>2020-12-02T10:07:37.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -883,11 +891,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-11-19T14:53:50.095</Modified>
+      <Modified>2020-12-02T09:44:39.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-11-19T14:53:50.095</Modified>
+      <Modified>2020-12-02T09:44:39.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -907,7 +915,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\Core\projectDevProg.UWP.exe">
       <PackagePath>projectDevProg.UWP.exe</PackagePath>
-      <Modified>2020-11-19T14:53:51.092</Modified>
+      <Modified>2020-12-02T09:44:40.802</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

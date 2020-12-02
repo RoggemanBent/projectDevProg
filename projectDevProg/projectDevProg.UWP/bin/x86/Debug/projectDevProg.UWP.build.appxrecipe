@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg.UWP\bin\x86\Debug\projectDevProg.UWP.exe">
       <PackagePath>entrypoint\projectDevProg.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\elasticsearch.net\7.10.0\lib\netstandard2.0\Elasticsearch.Net.dll">
+      <PackagePath>Elasticsearch.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\nest\7.10.0\lib\netstandard2.0\Nest.dll">
+      <PackagePath>Nest.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
@@ -108,9 +114,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.DiagnosticSource.dll">
-      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\System.Diagnostics.FileVersionInfo.dll">
       <PackagePath>System.Diagnostics.FileVersionInfo.dll</PackagePath>
@@ -522,6 +525,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\system.diagnostics.diagnosticsource\4.5.1\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
