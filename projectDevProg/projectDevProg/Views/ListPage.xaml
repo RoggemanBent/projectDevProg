@@ -2,35 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.ListPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0,0,0,0" Spacing="0">
+            <Label Text="Pokedex" FontSize="Title" TextColor="#DADADA"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <ListView Margin="8" x:Name="lvwPokemon" RowHeight="250" ItemSelected="lvwPokemon_ItemSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="8">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                </Grid.RowDefinitions>
-                                <Image x:Name="imgPokemon" HeightRequest="100" WidthRequest="100" Source="{Binding Image}" Grid.RowSpan="3" HorizontalOptions="Start" VerticalOptions="Center"/>
-                                <Label Text="{Binding Name}" Grid.Row="1" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
-                                <Label Text="{Binding Id}" Grid.Row="1" HorizontalOptions="End" FontSize="Large"  TextColor="Black"/>
-                                <Grid Grid.Row="2">
+        <Grid BackgroundColor="#DD5152">
+            <ListView Margin="8" x:Name="lvwPokemon" RowHeight="200" ItemSelected="lvwPokemon_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="8" BackgroundColor="#DADADA">
+                                <Grid Grid.Column="4" Grid.Row="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding FirstType}" FontSize="Micro" TextColor="Black"  Grid.Column="1"  HorizontalOptions="End"/>
-                                    <Label Text="{Binding SecondType}" FontSize="Micro" TextColor="Black"  Grid.Column="2" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding Id}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" FontSize="Large"  TextColor="Black"/>
+                                    <Label Text="{Binding Name}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
+                                    <Label Text="{Binding FirstType}" FontSize="Small" TextColor="Black" Grid.Row="3" Grid.Column="1"  HorizontalOptions="Start"/>
+                                    <Label Text="{Binding SecondType}" FontSize="Small" TextColor="Black" Grid.Row="3" Grid.Column="2" HorizontalOptions="Start"/>
+                                    <Label Grid.Row="4"/>
+                                    <Image x:Name="imgPokemon" HeightRequest="100" Grid.Column="3" Grid.RowSpan="3" WidthRequest="100" Source="{Binding Image}" HorizontalOptions="End" VerticalOptions="Center"/>
                                 </Grid>
-                            </Grid>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

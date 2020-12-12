@@ -2,28 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.MainPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="20,0,0,0" Spacing="0">
+            <Label Text="Pokemon" FontSize="Title" TextColor="#DADADA"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <Grid RowSpacing="0">
+        <Grid Grid.Row="5" RowSpacing="0" BackgroundColor="#DADADA">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="10"/>
-                <RowDefinition/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Image Aspect="AspectFill" Source="https://images4.alphacoders.com/728/728240.png"></Image>
-            <BoxView Grid.Row="1" BackgroundColor="SteelBlue"/>
-            <Grid Grid.Row="2" RowSpacing="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Frame x:Name="frmPokedex" Grid.Row="0" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Pokedex" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmFilter" Grid.Row="1" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Filter Pokemons" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-            </Grid>
+            <Frame Grid.Row="0" Padding="0" Margin="10">
+                <Image Aspect="AspectFill" Source="https://www.teahub.io/photos/full/95-959798_pokeball-great-ball-ultra-ball-master-ball.jpg"></Image>
+            </Frame>
+            <Frame x:Name="frmPokedex" Grid.Row="1" Padding="0" Margin="10" BackgroundColor="#DD5152">
+                <Label Text="Pokedex" FontSize="Medium" TextColor="#DADADA" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="16,0"/>
+            </Frame>
+            <Frame x:Name="frmFilter" Grid.Row="2" Padding="0" Margin="10" BackgroundColor="#DD5152">
+                <Label Text="Filter Pokemons" FontSize="Medium" TextColor="#DADADA" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="16,0"/>
+            </Frame>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
