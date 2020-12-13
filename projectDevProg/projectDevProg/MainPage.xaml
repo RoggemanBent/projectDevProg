@@ -4,25 +4,45 @@
              x:Class="projectDevProg.MainPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="20,0,0,0" Spacing="0">
-            <Label Text="Pokemon" FontSize="Title" TextColor="#DADADA"></Label>
+            <Label Text="Pokemon" FontSize="Title" TextColor="white"></Label>
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <Grid Grid.Row="5" RowSpacing="0" BackgroundColor="#DADADA">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Frame Grid.Row="0" Padding="0" Margin="10">
-                <Image Aspect="AspectFill" Source="https://www.teahub.io/photos/full/95-959798_pokeball-great-ball-ultra-ball-master-ball.jpg"></Image>
-            </Frame>
-            <Frame x:Name="frmPokedex" Grid.Row="1" Padding="0" Margin="10" BackgroundColor="#DD5152">
-                <Label Text="Pokedex" FontSize="Medium" TextColor="#DADADA" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="16,0"/>
-            </Frame>
-            <Frame x:Name="frmFilter" Grid.Row="2" Padding="0" Margin="10" BackgroundColor="#DD5152">
-                <Label Text="Filter Pokemons" FontSize="Medium" TextColor="#DADADA" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="16,0"/>
-            </Frame>
-        </Grid>
+        <StackLayout BackgroundColor="#DADADA">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="{x:Type Frame}" x:Key="FrameButtonStyle">
+                        <Setter Property="BackgroundColor" Value="#DD5152" />
+                        <Setter Property="CornerRadius" Value="10" />
+                        <Setter Property="Margin" Value="10" />
+                        <Setter Property="Padding" Value="0" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="TitleLabelStyle">
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="TextColor" Value="#DADADA" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                        <Setter Property="Margin" Value="16,0,0,0" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Padding="0" Margin="10">
+                    <Image Aspect="AspectFill" Source="https://www.teahub.io/photos/full/95-959798_pokeball-great-ball-ultra-ball-master-ball.jpg"/>
+                </Frame>
+                <Frame x:Name="frmPokedex" Grid.Row="1" Style="{StaticResource FrameButtonStyle}">
+                    <Label Text="Pokedex" Style="{StaticResource TitleLabelStyle}"/>
+                </Frame>
+                <Frame x:Name="frmFilter" Grid.Row="2" Style="{StaticResource FrameButtonStyle}">
+                    <Label Text="Filter Pokemons" Style="{StaticResource TitleLabelStyle}"/>
+                </Frame>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

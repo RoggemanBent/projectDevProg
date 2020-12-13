@@ -2,69 +2,93 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.FilteredPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0,0,0,0" Spacing="0">
+            <Label Text="Types" FontSize="Title" TextColor="white"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <Grid RowSpacing="0">
-            <Grid Grid.Row="0" RowSpacing="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Frame x:Name="frmNormal" Grid.Row="0" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Normal" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmPoison" Grid.Row="1" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Poison" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmPsychic" Grid.Row="2" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Psychic" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmGrass" Grid.Row="3" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Grass" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmGround" Grid.Row="4" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Ground" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmIce" Grid.Row="5" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Ice" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmFire" Grid.Row="6" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Fire" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmRock" Grid.Row="7" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Rock" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmDragon" Grid.Row="8" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Dragon" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmWater" Grid.Row="9" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Water" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmBug" Grid.Row="10" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Bug" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmDark" Grid.Row="11" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Dark" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmFighting" Grid.Row="12" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Fighting" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmGhost" Grid.Row="13" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Ghost" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmSteel" Grid.Row="14" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Steel" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmFlying" Grid.Row="15" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Flying" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmElectric" Grid.Row="16" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Electric" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
-                <Frame x:Name="frmFairy" Grid.Row="17" Padding="0" Margin="1" BorderColor="SteelBlue">
-                    <Label Text="Fairy" TextColor="SteelBlue" FontAttributes="Bold" VerticalOptions="Center" Margin="16,0"/>
-                </Frame>
+        <StackLayout BackgroundColor="#DADADA">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="{x:Type Frame}" x:Key="FrameStyle">
+                        <Setter Property="CornerRadius" Value="50" />
+                        <Setter Property="BorderColor" Value="White" />
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Padding" Value="0,15,0,15" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="LabelStyle">
+                        <Setter Property="FontSize" Value="Medium"/>
+                        <Setter Property="TextColor" Value="White" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Grid Grid.Row="9" Grid.Column="2" Padding="0,15,0,15">
+                <Grid RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Frame x:Name="frmNormal" BackgroundColor="#BDBDAE" Grid.Row="0" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Normal" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmPoison" BackgroundColor="#A15999" Grid.Row="1" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Poison" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmPsychic" BackgroundColor="#FA65B6" Grid.Row="2" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Psychic" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmGrass" BackgroundColor="#8BD650" Grid.Row="3" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Grass" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmGround" BackgroundColor="#ECCC57" Grid.Row="4" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Ground" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmIce" BackgroundColor="#96F1FF" Grid.Row="5" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Ice" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmFire" BackgroundColor="#FA5543" Grid.Row="6" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Fire" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmRock" BackgroundColor="#CEBD72" Grid.Row="7" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Rock" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmDragon" BackgroundColor="#8874FF" Grid.Row="8" Grid.Column="0" Style="{StaticResource FrameStyle}">
+                        <Label Text="Dragon" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmWater" BackgroundColor="#56AEFF" Grid.Row="0" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Water" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmBug" BackgroundColor="#C2D21F" Grid.Row="1" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Bug" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmDark" BackgroundColor="#886653" Grid.Row="2" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Dark" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmFighting" BackgroundColor="#A75545" Grid.Row="3" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Fighting" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmGhost" BackgroundColor="#7975D7" Grid.Row="4" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Ghost" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmSteel" BackgroundColor="#C4C2DB" Grid.Row="5" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Steel" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmFlying" BackgroundColor="#79A4FF" Grid.Row="6" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Flying" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmElectric" BackgroundColor="#FDE53C" Grid.Row="7" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Electric" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                    <Frame x:Name="frmFairy" BackgroundColor="#F9ADFF" Grid.Row="8" Grid.Column="1" Style="{StaticResource FrameStyle}">
+                        <Label Text="Fairy" Style="{StaticResource LabelStyle}"/>
+                    </Frame>
+                </Grid>
             </Grid>
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -2,33 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projectDevProg.Views.FilteredList">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0,0,0,0" Spacing="0">
+            <Label Text="Pokedex" FontSize="Title" TextColor="white"></Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
     <ContentPage.Content>
-        <ListView Margin="8" x:Name="lvwPokemon" RowHeight="250" ItemSelected="lvwPokemon_ItemSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="8" BackgroundColor="#DADADA">
-                            <Grid Grid.Column="4">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="{Binding Id}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" FontSize="Large"  TextColor="Black"/>
-                                <Label Text="{Binding Name}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
-                                <Label Text="{Binding FirstType}" FontSize="Small" TextColor="Black" Grid.Row="2" Grid.Column="1"  HorizontalOptions="Start"/>
-                                <Label Text="{Binding SecondType}" FontSize="Small" TextColor="Black" Grid.Row="2" Grid.Column="2" HorizontalOptions="Start"/>
-                                <Image x:Name="imgPokemon" HeightRequest="100" Grid.Column="3" WidthRequest="100" Source="{Binding Image}" Grid.RowSpan="3" HorizontalOptions="End" VerticalOptions="Center"/>
-                            </Grid>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <StackLayout BackgroundColor="#DD5152">
+            <Grid>
+                <ListView Margin="8" x:Name="lvwPokemon" RowHeight="220" ItemSelected="lvwPokemon_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame Margin="8" BackgroundColor="#DADADA" CornerRadius="10">
+                                    <Grid Grid.Column="4" Grid.Row="5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding Id}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" FontSize="Large"  TextColor="#414342"/>
+                                        <Label Text="{Binding Name}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" FontSize="Large" TextColor="#414342"/>
+                                        <Label Text="{Binding FirstType}" FontSize="Small" TextColor="#414342" Grid.Row="3" Grid.Column="1"  HorizontalOptions="Start"/>
+                                        <Label Text="{Binding SecondType}" FontSize="Small" TextColor="#414342" Grid.Row="3" Grid.Column="2" HorizontalOptions="Start"/>
+                                        <Label Grid.Row="4"/>
+                                        <Image x:Name="imgPokemon" HeightRequest="100" Grid.Column="3" Grid.RowSpan="3" WidthRequest="100" Source="{Binding Image}" HorizontalOptions="End" VerticalOptions="Center"/>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

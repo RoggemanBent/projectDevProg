@@ -732,7 +732,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\projectDevProg\projectDevProg\projectDevProg\bin\Debug\netstandard2.0\projectDevProg.dll">
       <PackagePath>projectDevProg.dll</PackagePath>
-      <Modified>2020-12-12T13:15:04.834</Modified>
+      <Modified>2020-12-12T14:36:51.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bent2\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
