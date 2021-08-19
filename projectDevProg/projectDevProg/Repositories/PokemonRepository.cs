@@ -2,6 +2,7 @@
 using projectDevProg.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -85,6 +86,40 @@ namespace projectDevProg.Repositories
                 {
                     return null;
                 }
+            }
+        }
+
+        public async static Task<List<Pokemon>> GetPokemonsAPI()
+        {
+            // HttpClient
+            using (HttpClient client = await GetClient())
+            {
+                String url = "https://devprogpokemon.azurewebsites.net/api/pokemon";
+                
+                String json = await client.GetStringAsync(url);
+
+                Debug.WriteLine(json);
+
+                // json --> List
+                // if (json != null)
+                // {
+                //     List<Pokemon> pokemons = JsonConvert.DeserializeObject<List<Pokemon>>(json);
+                //     List<Pokemon> pokemonsGood = new List<Pokemon>();
+                //     foreach (Pokemon p in pokemons)
+                //     {
+                //         if (p.Form == "Normal" || p.Form == "Galarian")
+                //         {
+                //             pokemonsGood.Add(p);
+                //         }
+                //     }
+                //     return pokemonsGood;
+                // }
+                // else
+                // {
+                //     return null;
+                // }
+
+                return null;
             }
         }
     }
