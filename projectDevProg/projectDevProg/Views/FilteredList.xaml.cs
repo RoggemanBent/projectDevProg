@@ -40,7 +40,7 @@ namespace projectDevProg.Views
                 }
 
                 i++;
-            }
+            }         
 
             lvwPokemon.ItemsSource = list3;
             //lvwPokemon.ItemsSource = await PokemonRepository.GetPokemons();

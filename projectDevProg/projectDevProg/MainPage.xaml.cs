@@ -26,6 +26,10 @@ namespace projectDevProg
             TapGestureRecognizer tapGestureRecognizer2 = new TapGestureRecognizer();
             tapGestureRecognizer2.Tapped += TapGestureRecognizer_Tapped2;
             frmFilter.GestureRecognizers.Add(tapGestureRecognizer2);
+
+            TapGestureRecognizer tapGestureRecognizer3 = new TapGestureRecognizer();
+            tapGestureRecognizer3.Tapped += TapGestureRecognizer_Tapped3;
+            frmAddPokemon.GestureRecognizers.Add(tapGestureRecognizer3);
         }
 
         private void TapGestureRecognizer_Tapped1(object sender, EventArgs e)
@@ -36,6 +40,11 @@ namespace projectDevProg
         private void TapGestureRecognizer_Tapped2(object sender, EventArgs e)
         {
             Navigation.PushAsync(new FilteredPage());
+        }
+
+        private void TapGestureRecognizer_Tapped3(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddPokemonPage());
         }
     }
 }

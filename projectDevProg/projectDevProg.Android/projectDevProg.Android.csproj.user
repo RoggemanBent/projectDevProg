@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Google Pixel 4a</SelectedDevice>
     <DefaultDevice>devprog</DefaultDevice>
-    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
