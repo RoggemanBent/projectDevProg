@@ -89,6 +89,26 @@ namespace projectDevProg.Repositories
             }
         }
 
+        public static async Task PostPokemon(PokemonAPI newPokemon) 
+        {
+            // HttpClient
+            using (HttpClient client = await GetClient())
+            {
+                String url = "https://devprogpokemon.azurewebsites.net/api/add/pokemon";
+
+                try
+                {
+                    string json = JsonConvert.SerializeObject(newPokemon);
+                    StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                    await client.PostAsync(url, content);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
         public async static Task<List<PokemonAPI>> GetPokemonsAPI()
         {
             // HttpClient
@@ -113,10 +133,7 @@ namespace projectDevProg.Repositories
                     List<PokemonAPI> pokemonsGood = new List<PokemonAPI>();
                     foreach (PokemonAPI p in pokemons)
                     {
-                        if (p.Form == "Normal" || p.Form == "Galarian")
-                        {
-                            pokemonsGood.Add(p);
-                        }
+                        pokemonsGood.Add(p);
                     }
                     return pokemonsGood;
                 }
