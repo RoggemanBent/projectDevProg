@@ -9,28 +9,94 @@
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout BackgroundColor="#DD5152">
-            <Label FontAttributes="Bold" Text="Login" FontSize="Medium" TextColor="Black" />
-            <Frame BackgroundColor="GhostWhite" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
-                <StackLayout Spacing="0">
-                    <Grid RowSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="100" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Label Text="User" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" />
-                        <Entry x:Name="entUser" TextColor="Black" Grid.Column="1" />
-                    </Grid>
-                    <Grid RowSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="100" />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Email" FontAttributes="Bold" TextColor="Black" VerticalOptions="Center" />
-                        <Entry x:Name="entEmail" TextColor="Black" Grid.Column="1" />
-                    </Grid>
-                </StackLayout>
-            </Frame>
-            <Button x:Name="btnLogin" Text="GO" TextColor="White" BackgroundColor="SteelBlue" Margin="0" />
+            <StackLayout Margin="8">
+                <Label FontSize="Large" Text="Make a new Pokemon" TextColor="white" />
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Name:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entName" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Id:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entId" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="First Type:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entType1" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Second Type:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entType2" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Attack:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entAttack" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Defense:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entDefense" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#DADADA" Padding="16">
+                    <StackLayout Spacing="0">
+                        <Grid RowSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Stamina:" FontAttributes="Bold" TextColor="#414342" VerticalOptions="Center" />
+                            <Entry x:Name="entStamina" TextColor="#414342" Grid.Column="1" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="btnSend" Text="Add Pokemon" TextColor="White" BackgroundColor="#414342" Padding="16" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
