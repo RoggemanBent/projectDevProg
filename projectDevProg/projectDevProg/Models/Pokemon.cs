@@ -20,6 +20,7 @@ namespace projectDevProg.Models
         public List<String> Type { get; set; }
 
         public String FirstType { get; set; }
+
         public String SecondType { get; set; }
 
         [JsonProperty(PropertyName = "base_stamina")]

@@ -89,7 +89,7 @@ namespace projectDevProg.Repositories
             }
         }
 
-        public async static Task<List<Pokemon>> GetPokemonsAPI()
+        public async static Task<List<PokemonAPI>> GetPokemonsAPI()
         {
             // HttpClient
             using (HttpClient client = await GetClient())
@@ -98,28 +98,32 @@ namespace projectDevProg.Repositories
                 
                 String json = await client.GetStringAsync(url);
 
-                Debug.WriteLine(json);
 
+                json = json.Replace(@"\", "");
+                
+                json = json.Substring(1);
+                json = json.Remove(json.Length - 1);
+                Debug.Write(json);
+                
                 // json --> List
-                // if (json != null)
-                // {
-                //     List<Pokemon> pokemons = JsonConvert.DeserializeObject<List<Pokemon>>(json);
-                //     List<Pokemon> pokemonsGood = new List<Pokemon>();
-                //     foreach (Pokemon p in pokemons)
-                //     {
-                //         if (p.Form == "Normal" || p.Form == "Galarian")
-                //         {
-                //             pokemonsGood.Add(p);
-                //         }
-                //     }
-                //     return pokemonsGood;
-                // }
-                // else
-                // {
-                //     return null;
-                // }
-
-                return null;
+                if (json != null)
+                {
+                    List<PokemonAPI> pokemons = JsonConvert.DeserializeObject<List<PokemonAPI>>(json);
+                    Debug.WriteLine(pokemons);
+                    List<PokemonAPI> pokemonsGood = new List<PokemonAPI>();
+                    foreach (PokemonAPI p in pokemons)
+                    {
+                        if (p.Form == "Normal" || p.Form == "Galarian")
+                        {
+                            pokemonsGood.Add(p);
+                        }
+                    }
+                    return pokemonsGood;
+                }
+                else
+                {
+                    return null;
+                }
             }
         }
     }
