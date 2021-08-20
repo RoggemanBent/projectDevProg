@@ -18,6 +18,7 @@ namespace projectDevProg.Views
         public AddPokemonPage()
         {
             InitializeComponent();
+
             btnSend.Clicked += BtnSend_Clicked;
         }
 
@@ -33,12 +34,12 @@ namespace projectDevProg.Views
             pokemon.Defense = int.Parse(entDefense.Text);
             pokemon.Stamina = int.Parse(entStamina.Text);
 
-            Debug.Write(pokemon);
-
             await PokemonRepository.PostPokemon(pokemon);
+        }
 
-            await Navigation.PushAsync(new AddPokemonList());
-
+        private void TapGestureRecognizer_Tapped2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddPokemonList());
         }
     }
 }
