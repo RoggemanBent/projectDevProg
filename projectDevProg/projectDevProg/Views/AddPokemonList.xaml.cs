@@ -32,10 +32,10 @@ namespace projectDevProg.Views
             {
                 // vraag op wie er geselecteerd is
                 // opm: casting noodzakelijk
-                Pokemon pokemonSelected = (Pokemon)lvwPokemon.SelectedItem;
+                PokemonAPI pokemonSelected = (PokemonAPI)lvwPokemon.SelectedItem;
 
                 // detail page
-                await Navigation.PushAsync(new DetailsPage(pokemonSelected));
+                await Navigation.PushAsync(new DetailsAPI(pokemonSelected));
 
                 lvwPokemon.SelectedItem = null;
             }

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectDevProg.Views.DetailsAPI">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0,0,0,0" Spacing="0">
+            <Label x:Name="lblName2" FontSize="Title" TextColor="white"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#DADADA" Orientation="Vertical">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="{x:Type Frame}">
+                        <Setter Property="BackgroundColor" Value="#DADADA" />
+                        <Setter Property="BorderColor" Value="#DD5152" />
+                        <Setter Property="CornerRadius" Value="10" />
+                        <Setter Property="Margin" Value="10" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="TitleLabelStyle">
+                        <Setter Property="TextColor" Value="#DD5152" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                        <Setter Property="Margin" Value="16,0,0,0" />
+                    </Style>
+                    <Style TargetType="{x:Type Label}" x:Key="DetailLabelStyle">
+                        <Setter Property="TextColor" Value="#DD5152" />
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                        <Setter Property="HorizontalOptions" Value="End" />
+                        <Setter Property="Margin" Value="0,0,16,0" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <Frame HeightRequest="80">
+                <Grid Grid.Row="2">
+                    <Grid Grid.Row="0">
+                        <Label Text="Name" Style="{StaticResource TitleLabelStyle}" />
+                        <Label x:Name="lblName" Style="{StaticResource DetailLabelStyle}" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Label Text="Types" Style="{StaticResource TitleLabelStyle}" />
+                        <Label x:Name="lblType" Style="{StaticResource DetailLabelStyle}" />
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame HeightRequest="120">
+                <Grid Grid.Row="3">
+                    <Grid Grid.Row="0">
+                        <Label Text="Stamina" Style="{StaticResource TitleLabelStyle}" />
+                        <Label x:Name="lblStamina" Style="{StaticResource DetailLabelStyle}" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Label Text="Attack" Style="{StaticResource TitleLabelStyle}" />
+                        <Label x:Name="lblAttack" Style="{StaticResource DetailLabelStyle}" />
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Label Text="Defense" Style="{StaticResource TitleLabelStyle}" />
+                        <Label x:Name="lblDefense" Style="{StaticResource DetailLabelStyle}" />
+                    </Grid>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

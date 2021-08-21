@@ -20,6 +20,7 @@ namespace projectDevProg.Views
             InitializeComponent();
 
             btnSend.Clicked += BtnSend_Clicked;
+            btnList.Clicked += BtnList_Clicked;
         }
 
         private async void BtnSend_Clicked(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace projectDevProg.Views
             await PokemonRepository.PostPokemon(pokemon);
         }
 
-        private void TapGestureRecognizer_Tapped2(object sender, EventArgs e)
+        private void BtnList_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AddPokemonList());
         }

@@ -4,14 +4,13 @@
              x:Class="projectDevProg.Views.AddPokemonPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="0,0,0,0" Spacing="0">
-            <Label Text="Pokedex" FontSize="Title" TextColor="white"></Label>
+            <Label Text="Make a new Pokemon" FontSize="Title" TextColor="white"></Label>
         </StackLayout>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout BackgroundColor="#DD5152">
             <StackLayout Margin="8">
-                <Label FontSize="Large" Text="Make a new Pokemon" TextColor="white" />
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -23,7 +22,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -35,7 +34,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -47,7 +46,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -59,7 +58,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -71,7 +70,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -83,7 +82,7 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="#DADADA" Padding="16">
+                <Frame BackgroundColor="#DADADA" Padding="16" CornerRadius="10">
                     <StackLayout Spacing="0">
                         <Grid RowSpacing="0">
                             <Grid.ColumnDefinitions>
@@ -95,7 +94,8 @@
                         </Grid>
                     </StackLayout>
                 </Frame>
-                <Button x:Name="btnSend" Text="Add Pokemon" TextColor="White" BackgroundColor="#414342" Padding="16" />
+                <Button x:Name="btnSend" Text="Add Pokemon" TextColor="White" BackgroundColor="#414342" Padding="16" CornerRadius="10"/>
+                <Button x:Name="btnList" Text="Show List" TextColor="White" BackgroundColor="#414342" Padding="16" CornerRadius="10"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
